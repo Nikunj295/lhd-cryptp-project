@@ -15,11 +15,27 @@ module.exports = {
   },
 
   modules: [
+    
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/bulma',
-    '@nuxtjs/pwa'
+    
+    
 ],
+manifest: {
+  name: 'CryptoApp',
+  
+  display: "standalone",
+  orientation: "portrait",
+  background_color: "#f5f5f5",
+  theme_color: "#29434d"
+ 
+},
+meta:{
+  name: "CryptoApp",
+  nativeUI: true,
+  favicon: true,
+},
   /*
   ** Customize the progress bar color
   */

@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  props: ["name", "price_usd", "percent_change_1h", "symbol"],
+  props: ["name", "price_usd", "percent_change_1h"],
   computed: {
     color() {
       return this.percent_change_1h > 0 ? "inc" : "dec";
