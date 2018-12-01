@@ -19,6 +19,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     '@nuxtjs/bulma',
+    '@nuxtjs/pwa'
     
     
 ],
