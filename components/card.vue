@@ -1,21 +1,30 @@
 <template>
 <div>
-        <md-card md-with-hover>
-      <md-ripple>
-        <md-card-header>
-          <div class="md-title">{{name}}</div>
-          <div class="md-subhead">{{price_usd}}</div>
-        </md-card-header>
-
-        <md-card-content :class="color">
-          {{percent_change_1h}}
-        </md-card-content>
-
        
-      </md-ripple>
-    </md-card>
-    </div>
 
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      {{name}}
+    </p>
+    <a href="#" class="card-header-icon" aria-label="more options">
+      <span class="icon">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </a>
+  </header>
+  <div class="card-content">
+    <div class="content">
+     {{price_usd}}
+     
+      
+    </div>
+  </div>
+  <footer class="card-footer">
+    {{percent_change_1h}}
+  </footer>
+    </div>
+</div>
 
 </template>
 
@@ -31,6 +40,10 @@ export default {
 </script>
 
 <style scoped>
+.card{
+    align-items: center;
+    justify-content: center;
+}
 .inc {
   color: green;
 }

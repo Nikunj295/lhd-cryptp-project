@@ -17,14 +17,15 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/dotenv',
-    '@nuxtjs/bulma'
+    '@nuxtjs/bulma',
+    '@nuxtjs/pwa'
 ],
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
   /*
-  ** Build configuration
+  ** Buildnp configuration
   */
   build: {
     /*
